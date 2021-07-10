@@ -1,0 +1,44 @@
+extends base
+
+block content    
+    form#post-house-ameneties
+        section#house-details
+            h2 House Details
+
+            input#building(type="text", value=`${buildingId}` style="display: none")
+            input#building-name(type="text", value=`${buildingName}` style="display: none")
+        
+            label#price-label(for="price") Price
+            input#price(type="text" placeholder="in rupees" autocomplete="off")
+
+            #unit
+                #firstUnit
+                    input#cr(type="radio" value="Cr" name="priceUnit")
+                    label#cr-label(for="cr") Crore
+                #secondUnit
+                    input#lakh(type="radio" value="Lakh" name="priceUnit")
+                    label#lakh-label(for="lakh") Lakh
+
+            label#flat-type-label(for="flat-type") Flat Type
+            input#flat-type(type="text" placeholder="in BHK" autocomplete="off")
+
+            label#sqft-area-label(for="sqft-area") sqft Area
+            input#sqft-area(type="number" placeholder="in meters" autocomplete="off")
+
+            label#bathrooms-label(for="bathrooms") Bathrooms
+            input#bathrooms(type="number" min=1)
+
+            label#balconies-label(for="belconies") Balconies
+            input#balconies(type="number" min=1)
+
+            label#status-label(for="status") Status
+            input#status(type="text")
+
+            label#usp-label(for="usb") USP
+            input#usp(type="text")
+
+            input#house-print(type="file" accept="image/*" value="Choose photo")
+
+        section#ameneties-details
+            
+        button#post-house Post House

@@ -1,0 +1,374 @@
+/* /////////////////////// NavBar ////////////////////////////// */
+#overview-slogan {
+    height: 8rem;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    /* border: 2px solid blue; */
+    overflow: hidden;
+    color: black;
+    opacity: 1;
+}
+/* #one-liner { */
+    /* height: 4rem; */
+    /* margin-top: 11%; */
+    /* border: 1px solid black; */
+    /* height: 12%; */
+/* } */
+
+.cssanimation {
+    animation-duration: 1s;
+    position: relative;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+        z-index: 0;
+    }
+    to { opacity: 1; z-index: 1 }
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+#bg-home-img {
+    height: 39rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+#bg-home-img img{
+    /* background-image: url("https://images.pexels.com/photos/2041003/pexels-photo-2041003.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    width: 100%;
+    height: 39rem;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    
+    /* color: white; */
+    opacity: 0.7;
+    /* background: rgba(76, 175, 80, 0.6); */
+}
+
+#search-box-section {
+    width: 45%;
+    /* widt/h: fit-content; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#search-field {
+    border: none;
+    border-radius: 5px;
+    /* background-color: #f1f2f6; */
+    width: 75%;
+    height: 2.5rem;
+    display: inline-block;
+    line-height: normal;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+#search-field:focus {
+    border: none;
+    outline: none;
+    color: grey;
+    border-bottom: 3px solid #7dd56f;
+}
+
+#search-box-section button {
+    border: none;
+    /* margin-left: 40%; */
+    /* margin-top: 1rem; */
+    background-color:#7dd56f;
+    color: white;
+    border-radius: 10px;
+    width: 20%;
+    height: 2.5rem;
+    text-align: center;
+    /* font-size: 16px; */
+    display: inline-block;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+/* ////////////////////////////// Body //////////////////////////////// */
+#body, #residentialHouseBody {
+    /* border: 3px solid yellow; */
+    width: 93%;
+    height: 37.5rem;
+    /* margin: 0 auto; */
+    margin-left: 3.5%;
+    overflow: hidden;
+    background-color: #eee;
+}
+.grid-container, .residentialHouseGridContainer {
+    /* border: 2px solid red; */
+    width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#apartments, #residentialVillas {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    margin-top: 18rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+#residentialVillas {
+    margin-top: 3rem;
+}
+
+.card-img, .residentialHouseCardImg {
+    height: 40%;
+}
+.card, .residentialHouseCard {
+    background-color: white;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    height: 34.5rem;
+    width: 314px;
+    box-shadow: 0 3px 7px 0 grey;
+    color: rgb(48, 45, 45);
+}
+
+.card img, .residentialHouseCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card .fa-rupee-sign, .residentialHouseCard .fa-rupee-sign {
+    margin-left: 0.625rem;
+    font-size: 1.2rem;
+}
+
+.card h2, .residentialHouseCard h2 {
+    display: inline-block;
+    margin: 0 5px;
+    font-family: 'Nunito', sans-serif;
+    /* margin-left: 5px; */
+}
+
+.card .onwards, .residentialHouseCard .onwards {
+    display: inline-block;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+} 
+
+.card h3, .residentialHouseCard h3 {
+    margin-left: 0.625rem;
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card .by, .residentialHouseCard .by {
+    margin-top: 0;
+    margin-left: 0.625rem;
+    /* font-size: 0.9rem; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.fa-map-marker-alt {
+    margin-left: 0.625rem;
+    display: inline-block;
+    color: grey;
+    font-size: 0.5rem;
+    position: relative;
+    top: 1.75%;
+}
+
+.card .area, .residentialHouseCard .area {
+    /* margin-top: 6%; */
+    margin-left: 1.5rem;
+    margin-top: -0.5rem;
+    font-size: 16px;
+    height: 2rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    /* display: inline-block; */
+}
+
+.card .areaIcon, .residentialHouseCard .areaIcon {
+    position: relative;
+    top: 0.75rem;
+}
+
+.card .text-muted, .residentialHouseCard .residentialHouseCardTextMuted {
+    margin-top: 8.5%;
+    margin-left: 0.625rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card .averageRating, .residentialHouseCard .residentialHouseCardAverageRating {
+    /* margin-top: 10%; */
+    margin-left: 0.625rem;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+
+.fa-star-o {
+    color: grey;
+    font-size: 0.8rem;
+    margin-left: 1px;
+    position: relative;
+    bottom: 1.3px;
+}
+
+.card .ratingQuantity, .residentialHouseCard .residentialHouseCardRatingQuantity {
+    margin-top: 3%;
+    margin-left: 1rem;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+
+.buildId {
+    display: none;
+}
+
+.line-break {
+    margin-top: 0;
+}
+.card .wishlist-btn, .residentialHouseCard .wishlist-btn{
+    color: black;
+    width: 6rem;
+    text-align: center;
+    height: 2.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+    padding-left: 1.25rem;
+    margin-left: 1.85rem;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.card .wishlist-btn:hover, .residentialHouseCard .wishlist-btn:hover{
+    color: white;
+    background-color: rgb(247, 41, 41);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    /* transform: translateY(-1px); */
+}
+
+.overviewBtnIcon {
+    position: relative;
+    left: 3.5rem;
+    top: 0.05rem;
+    /* padding-right: 10rem; */
+    color:black;
+}
+
+.card .detail-btn, .residentialHouseCard .detail-btn {
+    text-decoration: none;
+    color: white;
+    background-color:rgb(201, 43, 201);
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 1rem;
+    transition: all 0.2s;
+}
+
+.card .detail-btn:hover, .residentialHouseCard .detail-btn:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-6rem);
+}
+
+.overview-right-btn {
+    font-size: 3rem;
+    color: black;
+    float: right;
+    position: relative;
+    z-index: 1;
+    bottom: 20rem;
+    /* right: 1rem; */
+}
+
+.overview-left-btn {
+    font-size: 3rem;
+    color: black;
+    float: left;
+    position: relative;
+    z-index: 1;
+    top: 15.9rem;
+    /* left: 1rem; */
+}
+
+.updateBtnLink {
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    color:  rgb(201, 43, 201);
+}
+
+.updateBtnLink:hover {
+    color: #7dd56f;
+    
+}
+
+.updateLinkBtn {
+    display: none;
+}
+
+/* .an-1 {
+    opacity: 0;
+} */
+
+/* ////////////// Overview Apartments Animation On Scroll ///////////////// */
+.animateScrollApt {
+    animation-duration: 0.5s;
+    position: relative;
+}
+
+.animateAptFadeInBottom { animation-name: fadeInBottomOverviewApts }
+@keyframes fadeInBottomOverviewApts {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+        z-index: 0;
+    }
+    to { opacity: 1; z-index: 1 }
+}
+
+.animateScrollAptIH {
+    animation-duration: 0.5s;
+    position: relative;
+}
+
+.animateAptFadeInBottomIH { animation-name: fadeInBottomOverviewApts }
+@keyframes fadeInBottomOverviewApts {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+        z-index: 0;
+    }
+    to { opacity: 1; z-index: 1 }
+}

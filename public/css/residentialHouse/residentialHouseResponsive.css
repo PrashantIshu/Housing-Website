@@ -1,0 +1,105 @@
+
+@media only screen and (max-width: 900px) { 
+    #overviewSection {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #overviewSection #overviewPartTwo {
+        margin-top: 1rem;
+        height: 95%;
+    }
+    .stick {
+        position: unset;
+    }
+    #secondHalf {
+        width: 100%;
+        grid-template-columns: 99% 1%;
+    }
+    .contactSecondHalf {
+        display: none;
+    }
+    #localitySection, #photosGallery {
+        width: 100%;
+        margin-left: 0;
+    }
+    .pics-left-btn-ih {
+        left: 0;
+        top: 135rem;
+    }
+    .pics-right-btn-ih {
+        left: 91%;
+        top: 135rem;
+        right: 0;
+        
+    }
+    #builderIH {
+        width: 100%;
+        margin-left: 0
+    }
+    #builderIH #builderStatUpdate {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 800px) { 
+    #overviewPartThree p, #overviewPartThree h6 {
+        font-size: 16px;
+    }
+    #overviewPartThree .fa-rupee-sign {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) { 
+    #overviewSection #overviewPartTwo {
+        height: 90%;
+    }
+    #overviewPartThree p, #overviewPartThree h6 {
+        font-size: 15px;
+    }
+    #overviewPartThree .fa-rupee-sign {
+        font-size: 12px;
+    }
+    #localitySection, #photosGallery {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .pics-left-btn-ih, .pics-right-btn-ih  {
+        top: 132rem;
+    }
+    .pics-right-btn-ih {
+        left: 88%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) { 
+    #overviewPartThree p, #overviewPartThree h6 {
+        font-size: 14px;
+    }
+    #overviewPartThree .fa-rupee-sign {
+        font-size: 12px;
+    }
+    #builderIH #namingUpdate input{
+        width: 210%;
+    }
+    .pics-left-btn-ih, .pics-right-btn-ih  {
+        top: 132rem;
+    }
+}
+
+
+@media only screen and (max-width: 550px) { 
+    #overviewPartThree p, #overviewPartThree h6 {
+        font-size: 13px;
+    }
+
+    #overviewPartThree .fa-rupee-sign {
+        font-size: 11px;
+    }
+    .pics-left-btn-ih, .pics-right-btn-ih  {
+        top: 130rem;
+    }
+}
